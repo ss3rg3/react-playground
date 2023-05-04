@@ -1,11 +1,18 @@
 /** @type {import('tailwindcss').Config} */
-export default {
+module.exports = {
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      asdf: {
+        "ant-blue": "#030852"
+      },
+      borderColor: {
+        "ant-blue": "#030852"
+      }
+    },
   },
   plugins: [],
 }

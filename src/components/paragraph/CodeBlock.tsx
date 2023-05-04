@@ -6,7 +6,7 @@ type Props = {
     children: ReactNode;
 };
 
-export default function Code(props: Props) {
+export default function CodeBlock(props: Props) {
     const codeAsString = props.children?.toString() ?? '';
 
     return (
@@ -15,3 +15,4 @@ export default function Code(props: Props) {
         </SyntaxHighlighter>
     )
 }
+
