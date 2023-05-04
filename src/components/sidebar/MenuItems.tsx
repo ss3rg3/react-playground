@@ -17,6 +17,12 @@ export default function MenuItems() {
                 <MenuItem key={Paths.hooks.USE_STATE}>
                     <Link to={Paths.hooks.USE_STATE}>useState</Link>
                 </MenuItem>
+                <MenuItem key={Paths.hooks.USE_CALLBACK}>
+                    <Link to={Paths.hooks.USE_CALLBACK}>useCallback</Link>
+                </MenuItem>
+                <MenuItem key={Paths.hooks.USE_EFFECT}>
+                    <Link to={Paths.hooks.USE_EFFECT}>useEffect</Link>
+                </MenuItem>
             </SubMenu>
         </Menu>
     )

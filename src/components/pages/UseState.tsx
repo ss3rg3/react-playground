@@ -7,11 +7,11 @@ import Heading from "../paragraph/Heading.tsx";
 import List from "../paragraph/List.tsx";
 
 
-function UseState() {
+export default function UseState() {
     const [count, setCount] = useState(0)
 
     const codeExample =
-`
+        `
 const [count, setCount] = useState(0)
 // ...
 <Button
@@ -51,5 +51,3 @@ const [count, setCount] = useState(0)
         </>
     )
 }
-
-export default UseState

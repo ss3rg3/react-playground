@@ -12,7 +12,7 @@ interface Props {
 export default function LayoutWrapper(props: Props) {
 
     return (
-        <Layout className="flex h-screen justify-center bg-gray-200">
+        <Layout className="flex min-h-screen justify-center bg-gray-200">
             <div className="flex-1 max-w-screen-xl flex">
                 <Sider breakpoint="lg" collapsedWidth="0">
                     <Logo/>
@@ -25,7 +25,7 @@ export default function LayoutWrapper(props: Props) {
                             {props.children}
                         </div>
                     </Content>
-                    <Footer className={"border-b-ant-blue border-r-ant-blue border-btext-center border-r-8 border-b-8"}>
+                    <Footer className={"border-b-ant-blue border-r-ant-blue text-center border-r-8 border-b-8"}>
                         Footer!
                     </Footer>
                 </Layout>
