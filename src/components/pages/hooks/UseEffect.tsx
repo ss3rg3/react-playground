@@ -1,9 +1,9 @@
 import {useEffect, useState} from "react";
-import Code from "../paragraph/Code.tsx";
+import Code from "../../paragraph/Code.tsx";
 import {Button, Spin} from "antd";
-import Heading from "../paragraph/Heading.tsx";
-import List from "../paragraph/List.tsx";
-import id from "../utils/Utils.tsx";
+import Heading from "../../paragraph/Heading.tsx";
+import List from "../../paragraph/List.tsx";
+import id from "../../utils/Utils.tsx";
 
 export type User = {
     id: number;

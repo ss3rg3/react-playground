@@ -1,10 +1,10 @@
 import {memo, useCallback, useState} from "react";
-import CodeBlock from "../paragraph/CodeBlock.tsx";
-import Code from "../paragraph/Code.tsx";
-import Ident from "../paragraph/Ident.tsx";
+import CodeBlock from "../../paragraph/CodeBlock.tsx";
+import Code from "../../paragraph/Code.tsx";
+import Ident from "../../paragraph/Ident.tsx";
 import {Button} from "antd";
-import Heading from "../paragraph/Heading.tsx";
-import List from "../paragraph/List.tsx";
+import Heading from "../../paragraph/Heading.tsx";
+import List from "../../paragraph/List.tsx";
 
 
 export default function UseCallback() {

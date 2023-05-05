@@ -24,6 +24,11 @@ export default function MenuItems() {
                     <Link to={Paths.hooks.USE_EFFECT}>useEffect</Link>
                 </MenuItem>
             </SubMenu>
+            <SubMenu key="libs" title="Libs" icon={<NodeExpandOutlined />} >
+                <MenuItem key={Paths.libs.REACT_QUERY}>
+                    <Link to={Paths.libs.REACT_QUERY}>ReactQuery</Link>
+                </MenuItem>
+            </SubMenu>
         </Menu>
     )
 }
