@@ -1,9 +1,10 @@
 import {Layout} from 'antd';
 import {ReactNode} from "react";
-import {Content, Footer, Header} from "antd/es/layout/layout";
+import {Content, Footer} from "antd/es/layout/layout";
 import Logo from "./sidebar/Logo.tsx";
 import MenuItems from "./sidebar/MenuItems.tsx";
 import Sider from "antd/es/layout/Sider";
+import HeaderSection from "./header/HeaderSection.tsx";
 
 interface Props {
     children?: ReactNode;
@@ -19,7 +20,7 @@ export default function LayoutWrapper(props: Props) {
                     <MenuItems/>
                 </Sider>
                 <Layout>
-                    <Header/>
+                    <HeaderSection/>
                     <Content className={"bg-gray-100-200 border-r-8 border-r-ant-blue"}>
                         <div className={"p-6 min-h-full max-w-3xl"}>
                             {props.children}

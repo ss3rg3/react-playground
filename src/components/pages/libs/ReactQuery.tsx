@@ -3,7 +3,7 @@ import Heading from "../../paragraph/Heading.tsx";
 import List from "../../paragraph/List.tsx";
 import axios from "axios";
 import {useQuery, useQueryClient} from "react-query";
-import id from "../../../utils/Utils.tsx"
+import id from "../../../utils/utils.tsx"
 import {Button, Spin} from "antd";
 import {useState} from "react";
 import CodeBlock from "../../paragraph/CodeBlock.tsx";

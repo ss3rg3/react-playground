@@ -10,7 +10,8 @@ export class Paths {
     }
 
     public static libs = {
-        REACT_QUERY: `${Paths.LIBS}/react-query`
+        REACT_QUERY: `${Paths.LIBS}/react-query`,
+        ZUSTAND: `${Paths.LIBS}/zustand`
     }
 
 }

@@ -28,6 +28,9 @@ export default function MenuItems() {
                 <MenuItem key={Paths.libs.REACT_QUERY}>
                     <Link to={Paths.libs.REACT_QUERY}>ReactQuery</Link>
                 </MenuItem>
+                <MenuItem key={Paths.libs.ZUSTAND}>
+                    <Link to={Paths.libs.ZUSTAND}>Zustand</Link>
+                </MenuItem>
             </SubMenu>
         </Menu>
     )
