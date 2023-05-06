@@ -3,7 +3,7 @@ import Heading from "../../paragraph/Heading.tsx";
 import List from "../../paragraph/List.tsx";
 import axios from "axios";
 import {useQuery, useQueryClient} from "react-query";
-import id from "../../utils/Utils.tsx"
+import id from "../../../utils/Utils.tsx"
 import {Button, Spin} from "antd";
 import {useState} from "react";
 import CodeBlock from "../../paragraph/CodeBlock.tsx";
@@ -34,17 +34,18 @@ export default function ReactQuery() {
     const [count, setCount] = useState<number>(0)
     const queryClient = useQueryClient()
 
-    const content = isFetching ? (
-        <Spin size="large" tip="Loading..."/>
-    ) : error ? (
-        <p>An error occurred: {error.message}</p>
-    ) : !users ? (
-        <div>No users found</div>
-    ) : (
-        users.slice(0, 3).map((user: User) => (
-            <div key={id()}>{user.name} - {user.email}</div>
-        ))
-    )
+    const content =
+        isFetching ? (
+            <Spin size="large" tip="Loading..."/>
+        ) : error ? (
+            <p>An error occurred: {error.message}</p>
+        ) : !users ? (
+            <div>No users found</div>
+        ) : (
+            users.slice(0, 3).map((user: User) => (
+                <div key={id()}>{user.name} - {user.email}</div>
+            ))
+        )
 
 
     console.count("Rendering ReactQuery component")
@@ -105,13 +106,13 @@ isStale
                     <CodeBlock>
                         {`const mutation = useMutation(addUser, {
     onSuccess: () => {
-    // Reset the form fields after successful mutation
-    setName('');
-    setEmail('');
-    alert('User added successfully');
+      // Reset the form fields after successful mutation
+      setName('');
+      setEmail('');
+      alert('User added successfully');
   },
     onError: (error: Error) => {
-    alert(\`An error occurred: \${error.message}\`);
+      alert(\`An error occurred: \${error.message}\`);
   },
 });`}
                     </CodeBlock>
