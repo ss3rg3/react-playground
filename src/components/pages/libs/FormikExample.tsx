@@ -25,7 +25,6 @@ const validationSchema = Yup.object().shape({
 
 export default function FormikExample() {
     const [isSubmitted, setIsSubmitted] = useState(false)
-    const [submitAttempted, setSubmitAttempted] = useState(false);
 
     const handleSubmit = (
         values: LoginFormValues,
