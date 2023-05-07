@@ -11,6 +11,7 @@ import UseEffect from "./components/pages/hooks/UseEffect.tsx";
 import ReactQuery from "./components/pages/libs/ReactQuery.tsx";
 import { QueryClient, QueryClientProvider} from 'react-query'
 import Zustand from "./components/pages/libs/Zustand.tsx";
+import FormikExample from "./components/pages/libs/FormikExample.tsx";
 
 const queryClient = new QueryClient()
 
@@ -26,6 +27,7 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
                         <Route path={Paths.hooks.USE_EFFECT} element={<UseEffect/>}/>
                         <Route path={Paths.libs.REACT_QUERY} element={<ReactQuery/>}/>
                         <Route path={Paths.libs.ZUSTAND} element={<Zustand/>}/>
+                        <Route path={Paths.libs.FORMIK} element={<FormikExample/>}/>
                     </Routes>
                 </LayoutWrapper>
             </BrowserRouter>

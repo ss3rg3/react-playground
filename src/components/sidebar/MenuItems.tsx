@@ -31,6 +31,9 @@ export default function MenuItems() {
                 <MenuItem key={Paths.libs.ZUSTAND}>
                     <Link to={Paths.libs.ZUSTAND}>Zustand</Link>
                 </MenuItem>
+                <MenuItem key={Paths.libs.FORMIK}>
+                    <Link to={Paths.libs.FORMIK}>Formik</Link>
+                </MenuItem>
             </SubMenu>
         </Menu>
     )
