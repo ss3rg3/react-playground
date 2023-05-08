@@ -26,10 +26,7 @@ const validationSchema = Yup.object().shape({
 export default function FormikExample() {
     const [isSubmitted, setIsSubmitted] = useState(false)
 
-    const handleSubmit = (
-        values: LoginFormValues,
-        formikHelpers: FormikHelpers<LoginFormValues>
-    ) => {
+    const handleSubmit = (values: LoginFormValues, formikHelpers: FormikHelpers<LoginFormValues>) => {
         console.log('Form sent', values);
         formikHelpers.setSubmitting(false);
         setIsSubmitted(true)
