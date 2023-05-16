@@ -12,6 +12,7 @@ import ReactQuery from "./components/pages/libs/ReactQuery.tsx";
 import { QueryClient, QueryClientProvider} from 'react-query'
 import Zustand from "./components/pages/libs/Zustand.tsx";
 import FormikExample from "./components/pages/libs/FormikExample.tsx";
+import {ReactQueryDevtools} from "react-query/devtools";
 
 const queryClient = new QueryClient()
 
@@ -31,6 +32,7 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
                     </Routes>
                 </LayoutWrapper>
             </BrowserRouter>
+            <ReactQueryDevtools initialIsOpen={false} position={"bottom-right"}/>
         </QueryClientProvider>
     </React.StrictMode>
 )
